@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link rel='stylesheet' href='/css/login.css' />
+	<link rel='stylesheet' href='/css/iconfont.css' />
+	<script type="text/javascript" src="/js/jquery-1.11.3.js"></script>
+</head>
+<body>
+	<img class="logo" src="/images/logo.png"/>
+	<img class="sublogo" src="/images/ecshop-logo.png"/>	
+	<div class="" id="login">
+		<div class="user">
+			<div class="people iconfont">&#xe801;</div>
+			<input type="text" id="username" placeholder="用户名" onfocus="if(placeholder=='用户名'){placeholder=''}" onblur="if(placeholder==''){placeholder='用户名'}">
+		</div>
+		<div class="pass">
+			<div class="lock iconfont">&#xe74c;</div>
+			<input type="password" id="pwd" placeholder="密码" onfocus="if(placeholder=='密码'){placeholder=''}" onblur="if(placeholder==''){placeholder='密码'}">
+		</div>
+		<div class="check">
+			<div class="protect iconfont">&#xe60d;</div> 
+			<input type="text" id="idcode" placeholder="验证码" onfocus="if(placeholder=='验证码'){placeholder=''}" onblur="if(placeholder==''){placeholder='验证码'}">
+		</div>
+		<div class="code" onclick="change()"></div>
+		<div class="bg_bar">
+			<img src="/images/bg_bar.png"/>	
+		</div>
+		<div class="button"><input type="button" id="btn" value="登录" /></div>
+		<p>
+			<span><label><input class="meg" type="checkbox"><strong>保存登录信息</strong></label></span>
+			<b><a href="#">忘记密码？</a></b>
+			<i><a href="#">去店铺首页&gt;&gt;</a></i>
+		</p>
+	</div>	
+</body>
+<script type="text/javascript">
+
+	//登录
+	$("#btn").click(function(){
+		$.ajax({
+			url:"/api/login4ajax",
+			type:"post",
+			data:{
+				username:$("#username").val(),
+				pwd:$("#pwd").val()
+				// code:$(".code").text()
+			},
+			success:function(res){
+				console.log(res);
+				if(res.statuscode == 1){
+					alert(res.message);
+					location.href = "/dashboard?t=" + new Date().getTime();
+				}else{
+					alert(res.message);
+				}
+			}
+		})
+	});
+
+	//按回车键登录
+	document.onkeydown = function(evt){
+		var e = evt || window.event;
+		if(e.keyCode == 13){
+			document.getElementById("btn").click();
+		}
+	};
+
+	//随机生成4位字母数字验证码
+	function getCode(n) {
+	    var all = "azxcvbnmsdfghjklqwertyuiopZXCVBNMASDFGHJKLQWERTYUIOP0123456789";
+	    var b = "";
+	    for (var i = 0; i < n; i++) {
+	      var index = Math.floor(Math.random() * 62);
+	      b += all.charAt(index);
+
+	    }
+	    return b;
+  };
+
+  function change() {
+    document.getElementsByClassName("code")[0].innerHTML = getCode(4);
+    document.getElementsByClassName("code")[0].style.background = getColor();
+
+  }
+
+  //随机颜色
+  function getColor(){
+			var str = "0,1,2,3,4,5,6,7,8,9,a,b,c,d,e,f";
+			var arr = str.split(",");
+			var color = "#";
+			for(i = 0;i < 6;i ++){
+				color += arr[Math.floor(Math.random() * 16)];
+			}
+			return color;
+		}
+  window.onload = change;
+	
+ //验证码判断
+ function checkCode(){
+	 var iCode = document.getElementById("idcode");
+	 var oCode = document.getElementsByClassName("code")[0];
+	 iCode.onblur = function(){
+	 	if(iCode.value.length > 0 && iCode.value.toLocaleLowerCase() != oCode.innerHTML.toLocaleLowerCase()){
+	 		alert("验证码错误，请重新输入！");
+	 		iCode.value = "";
+	 		change();
+	 		return;
+	 	}else if(iCode.value.length <= 0){
+	 		alert("验证码不能为空！");
+	 		iCode.value = "";
+	 	}
+	}
+}
+checkCode();	
+</script>
+</html>

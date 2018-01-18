@@ -1,0 +1,147 @@
+@import "reset";
+body{
+	background:url(../images/bg.png) no-repeat;
+	background-size:100%;
+}
+.logo{
+	margin:40px 0 0 50px;
+	display:block;
+}
+.sublogo{
+	width:250px;
+	height:70px;
+	display:block;
+	margin:10px 0 0 514px;
+}
+#login{
+	width:442px;
+	height:354px;
+	background:#eeeceb;
+	margin:50px 0 0 407px;
+	position:relative;
+	overflow:hidden;
+	.bg_bar{
+		position:absolute;
+		left:-15px;
+		bottom: -40px;
+	}
+	.user{
+		width:300px;
+		height:50px;
+		border:1px solid #ddd;
+		margin:50px 0 0 70px;
+		.people{
+			width:36px;
+			height:36px;
+			display:block;
+			float:left;
+			font-size:22px;
+			color:#666;
+			padding:14px 0 0 14px;
+			background:#fff;
+		}
+		#username{
+			width:250px;
+			height:50px;
+			display:block;
+			float:left;
+		}
+	}
+	.pass{
+		width:300px;
+		height:50px;
+		border:1px solid #ddd;
+		margin-left:70px;
+		.lock{
+			width:36px;
+			height:36px;
+			display:block;
+			float:left;
+			font-size:22px;
+			color:#666;
+			padding:14px 0 0 14px;
+			background:#fff;
+		}
+		#pwd{
+			width:250px;
+			height:50px;
+			display:block;
+			float:left;
+		}
+	}
+	.check{
+		width:300px;
+		height:50px;
+		border:1px solid #ddd;
+		margin-left:70px;
+		.protect{
+			width:36px;
+			height:36px;
+			display:block;
+			float:left;
+			font-size:22px;
+			color:#666;
+			padding:14px 0 0 14px;
+			background:#fff;
+		}
+		#idcode{
+			width:250px;
+			height:50px;
+			display:block;
+			float:left;
+		}
+	}
+	.code{
+		position:absolute;
+		left:258px;
+		top:162px;
+		width:102px;
+		height:34px;
+		border:1px solid #ddd;
+		cursor:pointer;
+		text-align:center;
+		line-height:34px;
+		font-size:14px;
+	}
+	.button{
+		width:302px;
+		height:52px;
+		margin:20px 0 0 70px;
+		#btn{
+			width:302px;
+			height:52px;
+			background:#fc7878;
+			color:#fff;
+			font-size:16px;	
+		}
+	}
+	p{
+		width:302px;
+		height:12px;
+		margin:12px 0 0 70px;
+		span{
+			strong{
+				cursor:pointer;
+				margin:-2px 0 0 10px;
+				color:#666;
+			}
+		}
+		i{
+			a{
+				color:#41a5e1;
+			}
+			a:hover{
+				text-decoration:underline;
+			}			
+		}
+		b{		
+			margin:0 36px 0 25px;
+			a{
+				color:#41a5e1;
+			}
+			a:hover{
+				text-decoration:underline;
+			}
+		}
+	}
+}

@@ -1,0 +1,179 @@
+@charset "UTF-8";
+body, h1, h3, h2, h4, h5, h6, p, dl, dd, ul, ol, form, input, fieldset, th, td, iframe {
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, h4, h5, h6, strong, b {
+  font-weight: normal; }
+
+i, em {
+  font-style: normal; }
+
+a {
+  text-decoration: none;
+  color: #666; }
+
+li {
+  list-style: none; }
+
+img {
+  border: none;
+  vertical-align: top; }
+
+input {
+  vertical-align: top; }
+
+a, input, area {
+  outline: none; }
+
+input {
+  border: 0; }
+
+body {
+  font-size: 12px;
+  font-family: "微软雅黑"; }
+
+body {
+  width: 100%;
+  height: auto;
+  background: #e5e5e5; }
+  body h2 {
+    height: 30px;
+    margin: 0 0 10px 10px;
+    border-bottom: 1px solid #ccc;
+    font-size: 18px;
+    color: #333;
+    padding: 20px 0 0 10px; }
+    body h2 span {
+      margin-left: 10px; }
+    body h2 .addnew {
+      width: 98px;
+      height: 26px;
+      background: #c43926;
+      border-radius: 5px;
+      color: #fff;
+      float: right;
+      margin-right: 3px;
+      cursor: pointer; }
+  body .choice {
+    height: auto;
+    margin: 10px 10px 0 10px;
+    border: 1px solid #d7d7d7; }
+    body .choice ul {
+      width: 100%;
+      height: 42px;
+      margin-left: 10px; }
+      body .choice ul li {
+        float: left;
+        width: 88px;
+        height: 42px;
+        cursor: pointer;
+        line-height: 42px;
+        text-align: center; }
+    body .choice ol {
+      width: 100%;
+      height: auto;
+      background: #fefefe; }
+      body .choice ol li:nth-of-type(1) table {
+        padding-top: 20px; }
+        body .choice ol li:nth-of-type(1) table tr {
+          display: block;
+          margin-bottom: 15px; }
+          body .choice ol li:nth-of-type(1) table tr td:nth-of-type(1) {
+            text-align: right;
+            font-weight: 600;
+            vertical-align: top;
+            padding: 5px 1em;
+            width: 130px; }
+          body .choice ol li:nth-of-type(1) table tr td input {
+            border: 1px solid #a9a9a9;
+            height: 20px;
+            outline: 0; }
+        body .choice ol li:nth-of-type(1) table tr:nth-of-type(4) td:nth-of-type(2) input {
+          width: 60px;
+          height: 28px;
+          background: #ff3f3f;
+          color: #fff;
+          border-radius: 3px; }
+        body .choice ol li:nth-of-type(1) table tr:nth-of-type(11) td:nth-of-type(2) {
+          margin: 5px 0; }
+        body .choice ol li:nth-of-type(1) table tr:nth-of-type(11) td input {
+          border: none;
+          cursor: pointer; }
+      body .choice ol li:nth-of-type(1) #sub {
+        width: 60px;
+        height: 28px;
+        background: #ff3f3f;
+        color: #fff;
+        margin: 0 5px 0 460px;
+        border-radius: 3px;
+        cursor: pointer; }
+      body .choice ol li:nth-of-type(1) #ret {
+        width: 60px;
+        height: 28px;
+        background: #ff3f3f;
+        color: #fff;
+        border-radius: 3px;
+        cursor: pointer; }
+      body .choice ol li:nth-of-type(4) table {
+        padding: 12px 0; }
+        body .choice ol li:nth-of-type(4) table tr td:nth-of-type(2) span {
+          color: #666; }
+      body .choice ol li:nth-of-type(4) p {
+        padding-bottom: 16px; }
+        body .choice ol li:nth-of-type(4) p .sub {
+          width: 60px;
+          height: 28px;
+          background: #ff3f3f;
+          color: #fff;
+          margin: 0 5px 0 460px;
+          border-radius: 3px;
+          cursor: pointer; }
+        body .choice ol li:nth-of-type(4) p .ret {
+          width: 60px;
+          height: 28px;
+          background: #ff3f3f;
+          color: #fff;
+          border-radius: 3px;
+          cursor: pointer; }
+      body .choice ol li:nth-of-type(5) div {
+        padding: 37px 0 7px 0; }
+        body .choice ol li:nth-of-type(5) div .txt1 {
+          width: 133px;
+          height: 20px;
+          border: 1px solid #a9a9a9; }
+        body .choice ol li:nth-of-type(5) div span {
+          margin-left: 66px; }
+        body .choice ol li:nth-of-type(5) div .txt2 {
+          width: 253px;
+          height: 20px;
+          border: 1px solid #a9a9a9;
+          color: #aaa; }
+      body .choice ol li:nth-of-type(5) p {
+        padding-bottom: 16px; }
+        body .choice ol li:nth-of-type(5) p .sub {
+          width: 60px;
+          height: 28px;
+          background: #ff3f3f;
+          color: #fff;
+          margin: 0 5px 0 460px;
+          border-radius: 3px;
+          cursor: pointer; }
+        body .choice ol li:nth-of-type(5) p .ret {
+          width: 60px;
+          height: 28px;
+          background: #ff3f3f;
+          color: #fff;
+          border-radius: 3px;
+          cursor: pointer; }
+    body .choice .hide {
+      display: none; }
+    body .choice .show {
+      display: block; }
+    body .choice .normal {
+      background: #efefef;
+      color: #787878; }
+    body .choice .hover {
+      background: #fefefe;
+      color: #192e32;
+      font-weight: 600; }

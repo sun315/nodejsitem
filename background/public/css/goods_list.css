@@ -1,0 +1,98 @@
+@charset "UTF-8";
+body, h1, h3, h2, h4, h5, h6, p, dl, dd, ul, ol, form, input, fieldset, th, td, iframe {
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, h4, h5, h6, strong, b {
+  font-weight: normal; }
+
+i, em {
+  font-style: normal; }
+
+a {
+  text-decoration: none;
+  color: #666; }
+
+li {
+  list-style: none; }
+
+img {
+  border: none;
+  vertical-align: top; }
+
+input {
+  vertical-align: top; }
+
+a, input, area {
+  outline: none; }
+
+input {
+  border: 0; }
+
+body {
+  font-size: 12px;
+  font-family: "微软雅黑"; }
+
+body {
+  width: 100%;
+  height: 555px;
+  background: #e5e5e5; }
+  body h2 {
+    height: 30px;
+    margin: 0 0 10px 10px;
+    border-bottom: 1px solid #ccc;
+    font-size: 18px;
+    color: #333;
+    padding: 20px 0 0 10px; }
+    body h2 span {
+      margin-left: 10px; }
+    body h2 .addnew {
+      width: 98px;
+      height: 26px;
+      background: #c43926;
+      border-radius: 5px;
+      color: #fff;
+      float: right;
+      margin-right: 3px;
+      cursor: pointer; }
+  body table {
+    border-collapse: collapse;
+    margin-left: 10px; }
+    body table tr {
+      height: 52px;
+      background: #fff; }
+      body table tr td {
+        text-align: center;
+        border: 1px solid #ddd; }
+      body table tr td:nth-of-type(2) {
+        font-weight: 600;
+        font-size: 14px; }
+    body table tr:nth-of-type(1) {
+      background: #f3f3f3;
+      height: 46px; }
+    body table img {
+      cursor: pointer; }
+  body p {
+    width: 1040px;
+    text-align: right;
+    margin-left: 11px;
+    height: 42px;
+    line-height: 42px;
+    background: #fff;
+    padding-right: 8px; }
+    body p span {
+      color: red; }
+    body p b {
+      color: red; }
+    body p i {
+      color: red; }
+    body p input {
+      margin: 8px 5px 0;
+      width: 26px;
+      height: 20px;
+      border: 1px solid #a9a9a9; }
+    body p a {
+      color: #000; }
+    body p a:hover {
+      color: #bd5517;
+      text-decoration: underline; }

@@ -1,0 +1,308 @@
+@charset "UTF-8";
+body, h1, h3, h2, h4, h5, h6, p, dl, dd, ul, ol, form, input, fieldset, th, td, iframe {
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, h4, h5, h6, strong, b {
+  font-weight: normal; }
+
+i, em {
+  font-style: normal; }
+
+a {
+  text-decoration: none;
+  color: #666; }
+
+li {
+  list-style: none; }
+
+img {
+  border: none;
+  vertical-align: top; }
+
+input {
+  vertical-align: top; }
+
+a, input, area {
+  outline: none; }
+
+input {
+  border: 0; }
+
+body {
+  font-size: 12px;
+  font-family: "微软雅黑"; }
+
+/*-----header-----*/
+#header {
+  width: 100%;
+  height: 76px;
+  background: #303030; }
+  #header .sublogo {
+    margin: 20px 0 0 30px;
+    float: left; }
+  #header ul {
+    float: right;
+    overflow: hidden;
+    height: 76px; }
+    #header ul li {
+      text-align: center;
+      float: right;
+      padding-top: 10px;
+      width: 82px;
+      height: 66px; }
+      #header ul li a span {
+        color: #fff;
+        display: block; }
+      #header ul li a .yellow {
+        color: #ffff00;
+        font-weight: 600; }
+    #header ul li:hover {
+      background: #404040; }
+    #header ul .active {
+      width: 102px;
+      height: 66px; }
+
+/*-----nav-----*/
+#nav {
+  width: 100%;
+  height: 41px;
+  background: #575757;
+  border-bottom: 1px solid #212121; }
+  #nav ul {
+    margin-left: 15px;
+    float: left; }
+    #nav ul li {
+      float: left;
+      height: 41px;
+      line-height: 40px; }
+      #nav ul li a {
+        display: block;
+        padding: 0 12px;
+        float: left; }
+        #nav ul li a img {
+          width: 17px;
+          height: 18px;
+          vertical-align: middle; }
+        #nav ul li a .des {
+          color: #fff;
+          margin-left: 10px; }
+        #nav ul li a .num {
+          width: 32px;
+          height: 16px;
+          line-height: 16px;
+          display: inline-block;
+          background: url(../images/index-11_22.png) no-repeat scroll;
+          vertical-align: middle;
+          text-align: center;
+          color: #fff;
+          margin-left: 8px; }
+      #nav ul li a:hover {
+        background: #454545; }
+      #nav ul li .line {
+        height: 13px;
+        width: 0px;
+        margin-top: 15px;
+        border-right: 1px solid #656565;
+        border-left: 1px solid #303030;
+        display: block;
+        float: left; }
+  #nav ol {
+    float: left; }
+    #nav ol li {
+      float: left;
+      height: 41px;
+      line-height: 41px;
+      padding: 0 12px; }
+      #nav ol li a {
+        color: #fff; }
+    #nav ol li:hover {
+      background: #404040; }
+
+/*-----bottom-----*/
+#bottom {
+  width: 100%;
+  height: 555px;
+  background: #eee; }
+  #bottom .aside {
+    width: 180px;
+    height: 555px;
+    background: #575757;
+    float: left;
+    overflow-y: scroll; }
+    #bottom .aside .tabbar {
+      width: 163px;
+      height: 34px;
+      background: #303030;
+      border-top: 1px solid #212121;
+      border-bottom: 1px solid #7f7f7f; }
+      #bottom .aside .tabbar P {
+        color: #fff;
+        font-size: 14px;
+        height: 34px;
+        line-height: 34px;
+        margin-left: 28px; }
+    #bottom .aside .tabmain {
+      width: 163px;
+      height: 521px; }
+      #bottom .aside .tabmain ul li {
+        border-bottom: 1px solid #7f7f7f;
+        line-height: 42px;
+        color: #fff; }
+        #bottom .aside .tabmain ul li span {
+          color: #bababa;
+          font-weight: 900;
+          font-size: 22px;
+          margin-left: 44px; }
+        #bottom .aside .tabmain ul li ol {
+          display: none; }
+          #bottom .aside .tabmain ul li ol li {
+            width: 123px;
+            height: 30px;
+            line-height: 30px;
+            padding-left: 40px;
+            border: none; }
+            #bottom .aside .tabmain ul li ol li a {
+              color: #d7d7d7; }
+          #bottom .aside .tabmain ul li ol li:hover {
+            background: #797979; }
+        #bottom .aside .tabmain ul li img {
+          vertical-align: middle;
+          margin: 0 12px 0 10px; }
+      #bottom .aside .tabmain ul li:hover {
+        background: #454545; }
+  #bottom .drag {
+    width: 10px;
+    height: 555px;
+    background: #303030;
+    float: left; }
+  #bottom .main {
+    margin-left: 190px;
+    height: 555px; }
+    #bottom .main iframe {
+      width: 100%;
+      height: 100%; }
+    #bottom .main #goods_list {
+      display: none; }
+    #bottom .main #add_goods {
+      display: block; }
+    #bottom .main h2 {
+      height: 28px;
+      border-bottom: 1px solid #ccc;
+      margin: 0 10px;
+      padding-top: 20px;
+      padding-left: 10px;
+      color: #333;
+      font-size: 16px; }
+    #bottom .main h3 {
+      height: 39px;
+      line-height: 39px;
+      border-bottom: 1px solid black;
+      margin: 0 10px;
+      padding-left: 10px; }
+      #bottom .main h3 span {
+        color: red; }
+      #bottom .main h3 a {
+        color: #335b64; }
+      #bottom .main h3 a:hover {
+        text-decoration: underline;
+        color: orange; }
+    #bottom .main .sales {
+      height: 78px;
+      margin: 5px 10px 15px; }
+      #bottom .main .sales .total {
+        width: 255px;
+        height: 78px;
+        background: #27a9e3 url(../images/icon01.png) no-repeat 20px 10px;
+        overflow: hidden;
+        float: left;
+        margin-right: 10px; }
+        #bottom .main .sales .total h4 {
+          text-align: right;
+          color: #fff;
+          margin: 18px 18px 10px; }
+        #bottom .main .sales .total p {
+          text-align: right;
+          font-size: 22px;
+          color: #fff;
+          margin-right: 18px;
+          font-weight: 600; }
+      #bottom .main .sales .order {
+        width: 255px;
+        height: 78px;
+        background: #28b779 url(../images/icon02.png) no-repeat 20px 10px;
+        overflow: hidden;
+        float: left;
+        margin-right: 10px; }
+        #bottom .main .sales .order h4 {
+          text-align: right;
+          color: #fff;
+          margin: 18px 18px 10px; }
+        #bottom .main .sales .order p {
+          text-align: right;
+          font-size: 22px;
+          color: #fff;
+          margin-right: 18px;
+          font-weight: 600; }
+      #bottom .main .sales .member {
+        width: 255px;
+        height: 78px;
+        background: #852b99 url(../images/icon03.png) no-repeat 20px 10px;
+        overflow: hidden;
+        float: left;
+        margin-right: 10px; }
+        #bottom .main .sales .member h4 {
+          text-align: right;
+          color: #fff;
+          margin: 18px 18px 10px; }
+        #bottom .main .sales .member p {
+          text-align: right;
+          font-size: 22px;
+          color: #fff;
+          margin-right: 18px;
+          font-weight: 600; }
+      #bottom .main .sales .visit {
+        width: 255px;
+        height: 78px;
+        background: #ffb848 url(../images/icon04.png) no-repeat 20px 10px;
+        overflow: hidden;
+        float: left; }
+        #bottom .main .sales .visit h4 {
+          text-align: right;
+          color: #fff;
+          margin: 18px 18px 10px; }
+        #bottom .main .sales .visit p {
+          text-align: right;
+          font-size: 22px;
+          color: #fff;
+          margin-right: 18px;
+          font-weight: 600; }
+    #bottom .main .status {
+      height: 62px;
+      margin: 0 10px; }
+      #bottom .main .status .noconfirm {
+        width: 163px;
+        height: 60px;
+        background: #fbfbfb;
+        border: 1px solid #d4d4d4;
+        border-radius: 3px;
+        margin: 0 10px 15px 0;
+        float: left; }
+        #bottom .main .status .noconfirm .left {
+          width: 60px;
+          height: 60px;
+          float: left;
+          border-right: 1px solid #d4d4d4; }
+          #bottom .main .status .noconfirm .left img {
+            margin: 16px 0 0 15px; }
+        #bottom .main .status .noconfirm .right {
+          width: 87px;
+          height: 60px;
+          float: left;
+          padding-left: 15px; }
+          #bottom .main .status .noconfirm .right h4 {
+            margin: 10px 0 7px 0; }
+          #bottom .main .status .noconfirm .right p {
+            font-size: 22px;
+            color: #192e32;
+            font-weight: 900; }

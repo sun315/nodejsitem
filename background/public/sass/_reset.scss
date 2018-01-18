@@ -1,0 +1,36 @@
+body,h1,h3,h2,h4,h5,h6,p,dl,dd,ul,ol,form,input,fieldset,th,td,iframe{
+    margin:0; padding:0;
+}
+h1,h2,h3,h4,h5,h6,strong,b{
+    font-weight:normal;
+}
+i,em{
+    font-style:normal;
+}
+a{
+    text-decoration:none; 
+    color:#666;
+}
+li{
+    list-style:none;
+}
+img{
+    border:none;
+    vertical-align:top;
+}
+input{
+    vertical-align:top;
+}
+a,input,area{
+    outline:none;
+}
+input{
+    border:0;
+}
+$fontSize:12px;
+$fontFamily:"微软雅黑";
+body{
+    font-size:$fontSize; 
+    font-family:$fontFamily;
+}
+

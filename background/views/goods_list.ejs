@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link rel='stylesheet' href='/css/goods_list.css' />
+</head>
+<body>
+	<h2>
+		ECSHOP管理中心-商品列表
+		<span><a href="#"><img src="./images/teach.png"/></a></span>
+		<input type="button" value="+ 添加新商品" class="addnew">
+	</h2>
+	<table border="1">
+		<tr>
+			<td width="103">编号</td>
+			<td width="88">商品名称</td>
+			<td width="56">货号</td>
+			<td width="103">价格</td>
+			<td width="55">上架</td>
+			<td width="55">精品</td>
+			<td width="55">新品</td>
+			<td width="55">热销</td>
+			<td width="88">推荐排行</td>
+			<td width="49">库存</td>
+			<td width="89">虚拟销量</td>
+			<td width="242">操作</td>
+		</tr>
+		<% for(var i=0;i<docs.length;i++) {%>
+			<tr>
+				<td width="103"><%= docs[i].id%></td>
+				<td width="88"><%= docs[i].goodsname%></td>
+				<td width="56"><%= docs[i].goodsnum%></td>
+				<td width="103"><%= docs[i].price%></td>
+				<td width="55"><img src="./images/yes.gif"/></td>
+				<td width="55"><img src="./images/yes.gif"/></td>
+				<td width="55"><img src="./images/yes.gif"/></td>
+				<td width="55"><img src="./images/yes.gif"/></td>
+				<td width="88">100</td>
+				<td width="49"><%= docs[i].inventory%></td>
+				<td width="89">200</td>
+				<td width="242">
+					<img src="./images/icon_view.gif"/>
+					<img src="./images/icon_edit.gif"/>
+					<img src="./images/icon_copy.gif"/>
+					<img src="./images/icon_trash.gif"/>
+				</td>
+			</tr>
+		<% } %>	
+	</table>
+	<p>总计<span>0</span>个记录 分为<b>0</b>页 当前第<i>0</i>页，每页<input type="text"/>  |  <a href="#">第一页</a> <a href="#">上一页</a> <a href="#">下一页</a> <a href="#">最末页</a></p> 
+</body>
+<script type="text/javascript" src="/js/jquery-1.11.3.js"></script>
+<script type="text/javascript" src="/js/goods_list.js"></script>
+</html>

@@ -1,0 +1,156 @@
+@charset "UTF-8";
+body, h1, h3, h2, h4, h5, h6, p, dl, dd, ul, ol, form, input, fieldset, th, td, iframe {
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, h4, h5, h6, strong, b {
+  font-weight: normal; }
+
+i, em {
+  font-style: normal; }
+
+a {
+  text-decoration: none;
+  color: #666; }
+
+li {
+  list-style: none; }
+
+img {
+  border: none;
+  vertical-align: top; }
+
+input {
+  vertical-align: top; }
+
+a, input, area {
+  outline: none; }
+
+input {
+  border: 0; }
+
+body {
+  font-size: 12px;
+  font-family: "微软雅黑"; }
+
+body {
+  background: url(../images/bg.png) no-repeat;
+  background-size: 100%; }
+
+.logo {
+  margin: 40px 0 0 50px;
+  display: block; }
+
+.sublogo {
+  width: 250px;
+  height: 70px;
+  display: block;
+  margin: 10px 0 0 514px; }
+
+#login {
+  width: 442px;
+  height: 354px;
+  background: #eeeceb;
+  margin: 50px 0 0 407px;
+  position: relative;
+  overflow: hidden; }
+  #login .bg_bar {
+    position: absolute;
+    left: -15px;
+    bottom: -40px; }
+  #login .user {
+    width: 300px;
+    height: 50px;
+    border: 1px solid #ddd;
+    margin: 50px 0 0 70px; }
+    #login .user .people {
+      width: 36px;
+      height: 36px;
+      display: block;
+      float: left;
+      font-size: 22px;
+      color: #666;
+      padding: 14px 0 0 14px;
+      background: #fff; }
+    #login .user #username {
+      width: 250px;
+      height: 50px;
+      display: block;
+      float: left; }
+  #login .pass {
+    width: 300px;
+    height: 50px;
+    border: 1px solid #ddd;
+    margin-left: 70px; }
+    #login .pass .lock {
+      width: 36px;
+      height: 36px;
+      display: block;
+      float: left;
+      font-size: 22px;
+      color: #666;
+      padding: 14px 0 0 14px;
+      background: #fff; }
+    #login .pass #pwd {
+      width: 250px;
+      height: 50px;
+      display: block;
+      float: left; }
+  #login .check {
+    width: 300px;
+    height: 50px;
+    border: 1px solid #ddd;
+    margin-left: 70px; }
+    #login .check .protect {
+      width: 36px;
+      height: 36px;
+      display: block;
+      float: left;
+      font-size: 22px;
+      color: #666;
+      padding: 14px 0 0 14px;
+      background: #fff; }
+    #login .check #idcode {
+      width: 250px;
+      height: 50px;
+      display: block;
+      float: left; }
+  #login .code {
+    position: absolute;
+    left: 258px;
+    top: 162px;
+    width: 102px;
+    height: 34px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    text-align: center;
+    line-height: 34px;
+    font-size: 14px; }
+  #login .button {
+    width: 302px;
+    height: 52px;
+    margin: 20px 0 0 70px; }
+    #login .button #btn {
+      width: 302px;
+      height: 52px;
+      background: #fc7878;
+      color: #fff;
+      font-size: 16px; }
+  #login p {
+    width: 302px;
+    height: 12px;
+    margin: 12px 0 0 70px; }
+    #login p span strong {
+      cursor: pointer;
+      margin: -2px 0 0 10px;
+      color: #666; }
+    #login p i a {
+      color: #41a5e1; }
+    #login p i a:hover {
+      text-decoration: underline; }
+    #login p b {
+      margin: 0 36px 0 25px; }
+      #login p b a {
+        color: #41a5e1; }
+      #login p b a:hover {
+        text-decoration: underline; }
